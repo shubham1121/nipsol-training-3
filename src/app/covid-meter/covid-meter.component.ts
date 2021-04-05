@@ -6,9 +6,11 @@ import {UsersService} from '../users.service';
   styleUrls: ['./covid-meter.component.css']
 })
 export class CovidMeterComponent implements OnInit {
-
-  constructor(private countryData:UsersService) { }
-
+ countryName:any;
+  constructor(private countryData:UsersService) {
+    this.countryData.getCountryNames().subscribe((data)=>this.countryName=data);
+   }
+ 
   ngOnInit() {
   }
 

@@ -1,0 +1,18 @@
+.countrySelect {
+  display: inline-flex;
+  padding-left: 25px;
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.dropDownMenu {
+  display: inline-flex;
+  padding-left: 25px;
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  width: 30px;
+}
+#selectCountry {
+  width: 180px;
+}
