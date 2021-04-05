@@ -1,18 +1,44 @@
 .countrySelect {
-  display: inline-flex;
-  padding-left: 25px;
-  padding-top: 20px;
   font-weight: 600;
   font-size: 20px;
 }
 .dropDownMenu {
-  display: inline-flex;
-  padding-left: 25px;
-  padding-top: 20px;
   font-weight: 500;
   font-size: 15px;
-  width: 30px;
+  /* width: 30px; */
 }
-#selectCountry {
+/* #selectCountry {
   width: 180px;
+} */
+.records-wrapper{
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.alignDotsData{
+  width: 135px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.blueCircle{
+  background-color: blue;
+  border-radius: 30px;
+  width: 15px;
+  height: 15px;
+}
+.redCircle{
+  background-color: red;
+  border-radius: 30px;
+  width: 15px;
+  height: 15px;
+}
+.greenCircle{
+  background-color: green;
+  border-radius: 30px;
+  width: 15px;
+  height: 15px;
 }

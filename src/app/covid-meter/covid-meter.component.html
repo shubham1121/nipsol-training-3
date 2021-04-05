@@ -1,11 +1,22 @@
-<div class="countrySelect">
-<label for="selectCountry">Select Country</label>
-</div>
-<div class="dropDownMenu" >
-<select id="selectCountry" >
+<div class="records-wrapper">
+  <div class="countrySelect">
+    <label for="selectCountry">Select Country</label>
+  </div>
+  <div class="dropDownMenu">
+    <select id="selectCountry" >
   <option value="{{country.Country}}" selected *ngFor="let country of countryName;">{{country.Country}}</option>
 </select>
-</div>
-<div>
-
+  </div>
+  <div class="alignDotsData">
+    <div class="blueCircle"></div>
+    <div>TotalConfirmed</div>
+  </div>
+   <div class="alignDotsData">
+    <div class="greenCircle"></div>
+    <div>ActiveCases</div>
+  </div>
+   <div class="alignDotsData">
+    <div class="redCircle"></div>
+    <div>TotalDeaths</div>
+  </div>
 </div>
