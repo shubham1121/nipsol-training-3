@@ -12,6 +12,10 @@ export class UsersService {
     let url="https://api.covid19api.com/countries";
     return this.http.get(url);
   }
+  getCovidCount()
+  { let url="https://api.covid19api.com/world/total";
+     return this.http.get(url);
+  }
 public userData:any[]=[];
 
 collectData(userDetails:FormGroup)
