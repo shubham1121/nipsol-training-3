@@ -14,7 +14,7 @@ export class CovidMeterComponent implements OnInit {
    }
    updateCountryData()
    {
-     this.countryData.getCovidData().subscribe((data)=>this.covidCountryData=data);
+     this.countryData.getCovidData().subscribe((data:[])=>this.covidCountryData=data.slice(data.length-7,data.length));
    }
    getSlug(event)
    {

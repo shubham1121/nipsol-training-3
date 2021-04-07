@@ -26,7 +26,6 @@ export class UsersService {
   getUrl(temp:string)
   { 
     this.myapiurl='https://api.covid19api.com/country/'+temp;
-    console.log(this.myapiurl);
   }
 public userData:any[]=[];
 
