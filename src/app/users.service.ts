@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import {FormGroup} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
-  myapiurl="https://api.covid19api.com/country/";
+  myapiurl="https://api.covid19api.com/country/india";
   constructor(private http:HttpClient)
   {}
   getCountryNames()
@@ -17,9 +18,15 @@ export class UsersService {
   { let url="https://api.covid19api.com/world/total";
      return this.http.get(url);
   }
-  getCovidData(temp:string)
+  getCovidData()
+  {
+    return this.http.get(this.myapiurl);
+  }
+
+  getUrl(temp:string)
   { 
-    this.myapiurl+=temp;
+    this.myapiurl='https://api.covid19api.com/country/'+temp;
+    console.log(this.myapiurl);
   }
 public userData:any[]=[];
 
