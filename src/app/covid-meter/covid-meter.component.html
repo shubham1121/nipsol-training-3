@@ -3,7 +3,7 @@
     <label for="selectCountry">Select Country</label>
   </div>
   <div class="dropDownMenu">
-    <select id="selectCountry" onchange="getSlug(value);" onfocus="this.selectedIndex = -1;">
+    <select id="selectCountry" (change)="getSlug($event);">
   <option value="{{country.Slug}}"  selected *ngFor="let country of countryName;">{{country.Country}}</option>
 </select>
   </div>
