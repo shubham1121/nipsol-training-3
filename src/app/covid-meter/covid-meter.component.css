@@ -47,4 +47,8 @@
 .my-table{
   width: 90%;
   margin: auto;
+  padding-top: 20px;
+}
+.head-row{
+background-color: grey;
 }
