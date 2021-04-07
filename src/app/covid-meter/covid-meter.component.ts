@@ -12,9 +12,9 @@ export class CovidMeterComponent implements OnInit {
     this.countryData.getCountryNames().subscribe((data)=>this.countryName=data);
     this.countryData.getCovidCount().subscribe(data=>this.covidCount=data);
    }
-   getSlug(variable)
+   getSlug(event)
    {
-     console.warn(variable);
+     this.countryData.getCovidData(event.target.value)
    }
  
   ngOnInit() {

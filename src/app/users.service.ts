@@ -5,6 +5,7 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class UsersService {
+  myapiurl="https://api.covid19api.com/country/";
   constructor(private http:HttpClient)
   {}
   getCountryNames()
@@ -15,6 +16,10 @@ export class UsersService {
   getCovidCount()
   { let url="https://api.covid19api.com/world/total";
      return this.http.get(url);
+  }
+  getCovidData(temp:string)
+  { 
+    this.myapiurl+=temp;
   }
 public userData:any[]=[];
 
