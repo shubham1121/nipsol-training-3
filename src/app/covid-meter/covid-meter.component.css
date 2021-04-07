@@ -41,4 +41,10 @@
   border-radius: 30px;
   width: 15px;
   height: 15px;
+}.my-table-alignment{
+  text-align: center;
+}
+.my-table{
+  width: 90%;
+  margin: auto;
 }

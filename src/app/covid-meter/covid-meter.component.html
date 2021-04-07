@@ -20,8 +20,8 @@
     <div>{{covidCount ? covidCount.TotalRecovered:0}}</div>
   </div>
 </div>
-<div>
-  <table class="table table-bordered">
+<div class="my-table">
+  <table class="table table-bordered my-table-alignment">
     <thead>
       <tr>
         <th scope="col">Date</th>
@@ -33,11 +33,11 @@
     </thead>
     <tbody>
       <tr *ngFor="let data of covidCountryData;">
-        <th scope="col">{{data.Date}}</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>sakshi</td>
+        <td>{{data.Date}}</td>
+        <td>{{data.Confirmed}}</td>
+        <td>{{data.Active}}</td>
+        <td>{{data.Recovered}}</td>
+        <td>{{data.Deaths}}</td>
       </tr>
     </tbody>
   </table>

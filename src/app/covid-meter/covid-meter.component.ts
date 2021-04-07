@@ -12,16 +12,21 @@ export class CovidMeterComponent implements OnInit {
   constructor(private countryData:UsersService) {
    
    }
+   updateCountryData()
+   {
+     this.countryData.getCovidData().subscribe((data)=>this.covidCountryData=data);
+   }
    getSlug(event)
    {
      this.countryData.getUrl(event.target.value);
-     
+     this.updateCountryData();
    }
+   
  
   ngOnInit() {
      this.countryData.getCountryNames().subscribe((data)=>this.countryName=data);
     this.countryData.getCovidCount().subscribe((data)=>this.covidCount=data);
-    this.countryData.getCovidData().subscribe((data)=>this.covidCountryData=data);
+    
   }
 
 }
